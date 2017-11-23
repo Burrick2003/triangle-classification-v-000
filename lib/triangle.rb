@@ -13,7 +13,7 @@ attr_accessor :sideA, :sideB, :sideC, :type
       if self.sideA == self.sideB && self.sideC == self.sideB
         :equilateral
       elsif self.sideA == self.sideB || self.sideA == self.sideC || self.sideB == self.sideC
-        :isoceles
+        :isosceles
       elsif self.sideA != self.sideB && self.sideA != self.sideC && self.sideB != self.sideC
         :scalene
       end

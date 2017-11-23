@@ -5,11 +5,13 @@ attr_accessor :sideA, :sideB, :sideC
     @sideA = a
     @sideB = b
     @sideC = c
+    @type = ""
   end
 
   def kind
 
-    if self.
+    if self.sideA = self.sideB == self.sideC
+      self.type = "equilateral"
   end
 
 

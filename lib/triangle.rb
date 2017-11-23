@@ -13,9 +13,9 @@ attr_accessor :sideA, :sideB, :sideC, :type
       if self.sideA == self.sideB && self.sideC == self.sideB
         :equilateral
       elsif self.sideA == self.sideB || self.sideA == self.sideC || self.sideB == self.sideC
-        self.type = "isoceles"
+        :isoceles
       elsif self.sideA != self.sideB && self.sideA != self.sideC && self.sideB != self.sideC
-        self.type = "scalene"
+        :scalene
       end
     else
       raise TriangleError

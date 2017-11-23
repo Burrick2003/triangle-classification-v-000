@@ -10,8 +10,13 @@ attr_accessor :sideA, :sideB, :sideC, :type
 
   def kind
 
-    if self.sideA = self.sideB == self.sideC
+    if self.sideA == self.sideB == self.sideC
       self.type = "equilateral"
+    elsif self.sideA == self.sideB || self.sideA == self.sideC || self.sideB == self.sideC
+      self.type = "isoceles"
+    elseif self.sideA != self.sideB != self.sideC
+      self.type = "scalene"
+    end
   end
 
 

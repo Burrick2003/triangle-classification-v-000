@@ -10,13 +10,17 @@ attr_accessor :sideA, :sideB, :sideC, :type
 
   def kind
     if self.sideA + self.sideB > self.sideC && self.sideA + self.sideC > self.sideB && self.sideB + self.sideC > self.sideA && self.sideA > 0 && self.sideB > 0 && self.sideC > 0
-      elsif self.sideA == self.sideB == self.sideC
+      if self.sideA == self.sideB == self.sideC
         self.type = "equilateral"
       elsif self.sideA == self.sideB || self.sideA == self.sideC || self.sideB == self.sideC
         self.type = "isoceles"
       elsif self.sideA != self.sideB != self.sideC
         self.type = "scalene"
       end
+    else
+      raise TriangleError
+    end
+    
   end
 
 

@@ -14,7 +14,7 @@ attr_accessor :sideA, :sideB, :sideC, :type
         self.type = "equilateral"
       elsif self.sideA == self.sideB || self.sideA == self.sideC || self.sideB == self.sideC
         self.type = "isoceles"
-      elsif self.sideA != self.sideB != self.sideC
+      elsif self.sideA != self.sideB && self.sideA != self.sideC && self.sideB != self.sideC
         self.type = "scalene"
       end
     else

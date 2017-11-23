@@ -5,7 +5,7 @@ attr_accessor :sideA, :sideB, :sideC, :type
     @sideA = a
     @sideB = b
     @sideC = c
-    @type = {"type": }
+    @type = ""
   end
 
   def kind
